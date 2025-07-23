@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #fcfcfc;
+    --foreground: #000000;  
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-fredoka),Arial, Helvetica, sans-serif;
+}
+
+/*Desktop Menu*/
+
+.header-menu{
+  text-decoration: none;
+  font-size: '16px';
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: 'center';
+}
+
+.header-menu > a{
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  justify-items: space-between;
+}
+
+@media screen and (max-width: 768px){
+.header-menu a {
+  display: none;
+ 
+  }                                                   
+}
+
+.mobile-menu a{
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  font-size: '100px';
+}
